@@ -126,12 +126,13 @@ func Provider() *schema.Provider {
 			"routeros_wireguard_peer": ResourceInterfaceWireguardPeer(),
 
 			// System Objects
-			"routeros_ip_cloud":           ResourceIpCloud(),
-			"routeros_system_identity":    ResourceSystemIdentity(),
-			"routeros_system_logging":     ResourceSystemLogging(),
-			"routeros_system_scheduler":   ResourceSystemScheduler(),
-			"routeros_system_certificate": ResourceSystemCertificate(),
-			"routeros_system_user":        ResourceUser(),
+			"routeros_ip_cloud":                    ResourceIpCloud(),
+			"routeros_system_identity":             ResourceSystemIdentity(),
+			"routeros_system_logging":              ResourceSystemLogging(),
+			"routeros_system_logging_action_email": ResourceSystemLoggingEmailAction(),
+			"routeros_system_scheduler":            ResourceSystemScheduler(),
+			"routeros_system_certificate":          ResourceSystemCertificate(),
+			"routeros_system_user":                 ResourceUser(),
 
 			// Aliases for system objects to retain compatibility between original and fork
 			"routeros_identity":  ResourceSystemIdentity(),
